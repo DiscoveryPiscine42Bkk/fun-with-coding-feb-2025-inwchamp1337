@@ -1,1 +1,4 @@
-find . -type f -o -type d | wc -l
+
+#!/bin/bash
+
+ls -A | wc -l
