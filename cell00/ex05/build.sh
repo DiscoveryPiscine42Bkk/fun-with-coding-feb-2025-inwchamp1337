@@ -5,5 +5,5 @@ for x in "$@"; do                 #vs $#
 done
 
 
-#-n "$x" && 
+#-n "$x" &&  3
 #vs $# 
