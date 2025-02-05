@@ -1,55 +1,20 @@
-/* การกำหนดสไตล์ให้กับ body และ container */
-body {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
-}
-
-.table-container {
-    width: 100vw; /* ความกว้างเต็มจอ */
-    height: 100vh; /* ความสูงเต็มจอ */
-    display: flex;
-    justify-content: center; /* จัดให้อยู่กลางแนวนอน */
-    align-items: center; /* จัดให้อยู่กลางแนวตั้ง */
-    padding: 0;
-}
-
 table {
-    width: 100%; /* ตารางเต็มความกว้าง */
-    height: 100%; /* ตารางเต็มความสูง */
-    border-collapse: collapse; /* ไม่มีช่องว่างระหว่างเส้น */
+    width: 100%;
+    border-collapse: collapse;
 }
 
 td {
-    text-align: center; /* ข้อความอยู่ตรงกลาง */
-    vertical-align: middle; /* จัดข้อความกึ่งกลางแนวตั้ง */
-    font-size: 2em; /* ขนาดตัวอักษร */
-    color: white;
+    height: 100px;
+    width: 50%;
+    text-align: left;
+    font-size: 16px;
+    border: 1px solid black;
 }
 
-.first-cell {
-    background-color: #90be6d; /* สีเขียวอ่อน */
+.first {
+    background-color: #87bfe4;
 }
 
-.second-cell {
-    background-color: #f896a4; /* สีชมพูอ่อน */
-}
-
-/* ทำให้ตาราง responsive เมื่อหน้าจอเล็กลง */
-@media (max-width: 768px) {
-    td {
-        font-size: 1.5em; /* ปรับขนาดตัวอักษรให้เล็กลง */
-    }
-}
-
-@media (max-width: 480px) {
-    table {
-        display: block;
-    }
-    td {
-        display: block;
-        width: 100%; /* แต่ละช่องเต็มความกว้าง */
-        font-size: 1.2em;
-    }
+.second {
+    background-color: #cf88b3;
 }
