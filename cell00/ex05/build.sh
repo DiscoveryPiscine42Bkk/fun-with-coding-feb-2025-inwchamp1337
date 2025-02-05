@@ -1,5 +1,6 @@
-for dir in "$@"; do
-	if [ ! -d "$dir" ]; then
-		mkdir "ex$dir"
-	fi
+for x in "$@"; do
+    if [[ ! -d "$x" ]]; then #-n a
+        mkdir "ex$x"
+    fi
 done
+#-n "$x" && 
