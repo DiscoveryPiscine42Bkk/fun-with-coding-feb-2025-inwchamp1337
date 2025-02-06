@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <style>
+    /* Initial balloon style */
+    #balloon {
+      width: 200px;
+      height: 200px;
+      background-color: red; /* เปลี่ยนจาก background เป็น background-color */
+      border-radius: 50%;
+      cursor: pointer;
+    }
+  </style>
+  <body>
+    <div id="balloon"></div>
+    <script>
+      $(document).ready(function () {
+        var colors = ["red", "green", "blue"];
+        var currentColor = 1;
+
+        $("#balloon").click(function () {
+          // ใช้ background-color ให้ตรงกับที่ตั้งไว้ใน CSS
+          $("#balloon").css("background-color", colors[currentColor]);
+          currentColor = (currentColor + 1) % colors.length;
+        });
+      });
+    </script>
+  </body>
+</html>
